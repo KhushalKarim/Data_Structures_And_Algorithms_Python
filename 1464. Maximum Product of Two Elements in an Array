@@ -1,0 +1,17 @@
+https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/
+
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+       nums=sorted(nums, reverse=True)
+       for i in range(0,1len(nums)):
+        new=(nums[i]-1)*(nums[i+1]-1)
+        return new
+
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+       nums=sorted(nums, reverse=True)
+       for i in range(1):
+        new=(nums[i]-1)*(nums[i+1]-1)
+        return new
+        
+        

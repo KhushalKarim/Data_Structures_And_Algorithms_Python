@@ -1,0 +1,15 @@
+https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/
+
+class Solution:
+    def removeDuplicates(self, s: str) -> str:
+        new=[]
+        for x in s:
+            if new and new[-1] == x:
+                    new.pop()
+            else:
+                new.append(x)
+        return ''.join(new)
+
+
+
+        

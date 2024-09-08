@@ -1,0 +1,12 @@
+https://leetcode.com/problems/richest-customer-wealth/description/
+
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        sum1=sum(accounts[0])
+        for i in range(len(accounts)):
+            sum2=sum(accounts[i])
+            if sum2>sum1:
+                sum1=sum2
+            else:
+                sum1
+        return sum1
